@@ -1,0 +1,2 @@
+//NEWS
+export const ourNew = [];

@@ -1,34 +1,46 @@
 //////////////////////////////
 /////////////////////////////
+import { meetUp } from "./Database/meetings.js";
+import { ourSponsor } from "./Database/sponsors.js";
+import { ourNew } from "./Database/news.js";
+import { ourTeams } from "./Database/team.js";
+import { ourJob } from "./Database/jobs.js";
+
+let meetUps = meetUp;
+let ourSponsors = ourSponsor;
+let ourJobs = ourJob;
+let ourTeam = ourTeams;
+let ourNews = ourNew;
+
 //DATABASE
 
 //MEETINGS
-const meetUps = [];
+// const meetUps = [];
 
-//TEAM
-const ourTeam = [
-  {
-    twitter: "@cbavlon",
-    teamName: "Jonathan Selorm",
-    about: "Javascript Lover, Bloger, Music Addict.",
-    teamURL: "https://i.ibb.co/nBPrRvT/cirlorm.png",
-    githubUser: "https://github.com/champ3oy/",
-    twitterUser: "https://twitter.com/cbavlon"
-  }
-];
+// //TEAM
+// const ourTeam = [
+//   {
+//     twitter: "@cbavlon",
+//     teamName: "Jonathan Selorm",
+//     about: "Javascript Lover, Bloger, Music Addict.",
+//     teamURL: "https://i.ibb.co/nBPrRvT/cirlorm.png",
+//     githubUser: "https://github.com/champ3oy/",
+//     twitterUser: "https://twitter.com/cbavlon"
+//   }
+// ];
 
-//SPONSERS
-const ourSponsors = [
-  {
-    image: "img/cirlorm.png"
-  }
-];
+// //SPONSERS
+// const ourSponsors = [
+//   {
+//     image: "img/cirlorm.png"
+//   }
+// ];
 
-//NEWS
-const ourNews = [];
+// //NEWS
+// const ourNews = [];
 
-//JOBS
-const ourJobs = [];
+// //JOBS
+// const ourJobs = [];
 
 /////////////////////////
 //OPs
