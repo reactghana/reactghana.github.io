@@ -11,7 +11,9 @@ const ourTeam = [
     twitter: "@cbavlon",
     teamName: "Jonathan Selorm",
     about: "Javascript Lover, Bloger, Music Addict.",
-    teamURL: "img/react.png"
+    teamURL: "img/react.png",
+    githubUser: "https://github.com/champ3oy/",
+    twitterUser: "https://twitter.com/cbavlon",
   }
 ];
 
@@ -94,13 +96,13 @@ for (var i = 0; i < ourJobs.length; i++) {
 // for Team
 for (var i = 0; i < ourTeam.length; i++) {
   if (ourTeam.length !== 0) {
-    const { twitter, teamName, about, teamURL } = ourTeam[i];
+    const { twitter, teamName, about, teamURL, githubUser, twitterUser } = ourTeam[i];
     $("#team").append(
       '<div class="column is-half subtitle is-4"> <div class="image is-5by3"> <img src="' +
         teamURL +
         '" /> </div> <span class="has-text-warning">' +
         twitter +
-        '</span><br><span class="has-text-light"><a href=""><i class="fab fa-github"></i></a> <a href=""><i class="fab fa-twitter"></i></a></span> <p class="title is-4 has-text-success">' +
+        '</span><br><span class="has-text-light"><a href="'+githubUser+'"><i class="fab fa-github"></i></a> <a href="'+twitterUser+'"><i class="fab fa-twitter"></i></a></span> <p class="title is-4 has-text-success">' +
         teamName +
         "</p> " +
         about +
