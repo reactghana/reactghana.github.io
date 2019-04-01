@@ -11,7 +11,7 @@ const ourTeam = [
     twitter: "@cbavlon",
     teamName: "Jonathan Selorm",
     about: "Javascript Lover, Bloger, Music Addict.",
-    teamURL: "img/cirlormteam.png",
+    teamURL: "img/cirlormTeam.png",
     githubUser: "https://github.com/champ3oy/",
     twitterUser: "https://twitter.com/cbavlon"
   }
