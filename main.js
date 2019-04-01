@@ -117,7 +117,7 @@ for (var i = 0; i < ourTeam.length; i++) {
       twitterUser
     } = ourTeam[i];
     $("#team").append(
-      '<div class="column is-half subtitle is-4"> <div class="image"> <img src="' +
+      '<div class="column is-half subtitle is-4"> <div class="image"> <img style="filter: grayscale(90%); -webkit-filter: grayscale(90%);" src="' +
         teamURL +
         '" /> </div> <span class="has-text-warning">' +
         twitter +
