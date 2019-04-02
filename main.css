@@ -3,11 +3,15 @@ body {
   height: 100%;
   display: block;
 }
+.boy {
+  height: 100vh;
+
+}
 .img-div {
   display: absolute;
   float: left;
   top: 20px;
-  left: 45%;
+  left: 43.5%;
   text-align: center;
 }
 @media screen and (max-width: 800px) {
@@ -32,6 +36,16 @@ body {
     float: right;
     padding-right: 20px;
     font-size: 22px;
+  }
+  .storyBody {
+    margin-left: 5px; 
+    margin-right: 5px; 
+    margin-top: 200px;
+    text-align: center;
+  }
+  .msgbody {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 /* Unusual Screen Size */
@@ -63,6 +77,7 @@ body {
   left: -120px;
   width: 30px;
 }
+
 .section1 {
   margin-top: 220px;
   padding-left: 50px;
@@ -103,6 +118,12 @@ body {
 .section2-mobile {
   display: none;
 }
+.storyBody {
+  margin-left: 70px; 
+  margin-right: 70px; 
+  margin-top: 200px;
+  text-align: center;
+}
 }
 #navbar {
   height: 4.5vh;
@@ -118,3 +139,4 @@ body {
   font-size: 19px;
   font-weight: 10;
 }
+

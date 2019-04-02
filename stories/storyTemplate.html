@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Story Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="body">
+      <div style="padding-top: 10px"></div>
+      <section class="container">
+        <div class="message is-primary msgbody">
+          <div class="message-body">
+            <div>
+              <span
+                class="has-text-light"
+                style="display: none; margin-bottom: 15px;"
+                id="dark"
+                onclick="darkMode()"
+                ><i class="far fa-moon"></i>Light Mode</span
+              >
+              <span
+                style="margin-bottom: 15px;"
+                class="has-text-light"
+                id="day"
+                onclick="dayMode()"
+                ><i class="fas fa-moon"></i> Dark Mode</span
+              >
+            </div>
+            <div class="image is-128x128 img-div">
+              <a href="../index.html"
+                ><img class="logo" src="../img/react.png"
+              /></a>
+              <div class="title is-4 has-text-danger tit">
+                React Ghan
+              </div>
+              <script>
+                // DARK MODE SETTINGS.
+                function darkMode() {
+                  $("body").css("background-color", "#282c34");
+                  $("#dark").css("display", "none");
+                  $("#day").css("display", "inline");
+                }
+                function dayMode() {
+                  $("body").css("background-color", "white");
+                  $("#day").css("display", "none");
+                  $("#dark").css("display", "inline");
+                }
+              </script>
+            </div>
+
+            <div class="has-text-light storyBody">
+              <div class="image is-5by3">
+                <a href="../index.html"><img src="../img/gh.jpg"/></a>
+              </div>
+              <hi class="title has-text-warning">Story Title</hi>
+              <br />
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus numquam animi quam possimus natus voluptates dolore
+              eius minus consequuntur nihil consequatur eligendi totam veritatis
+              culpa eum optio impedit commodi eveniet, fugiat accusantium, hic
+              cumque porro veniam sed! Sed velit ipsum laudantium praesentium,
+              distinctio adipisci ullam quibusdam placeat! Natus reprehenderit
+              suscipit non at quae accusantium maiores, deserunt labore
+              perferendis ab odit asperiores modi eligendi veritatis. Odit,
+              voluptates fugit dolorem saepe dignissimos impedit quibusdam
+              maiores velit cumque consectetur numquam earum adipisci vitae,
+              quod eveniet perspiciatis illo laudantium veniam quasi recusandae,
+              aliquam aliquid! Explicabo ex, laudantium voluptatem corrupti quod
+              tempore tempora praesentium fugit?
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="main.js"></script>
+      <div
+        class="title is-4 has-text-primary"
+        style="margin: 20px; text-align: center; border-top: solid 2px grey;"
+      >
+        2019 ReactJS-Ghana
+      </div>
+    </div>
+  </body>
+</html>

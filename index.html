@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <style>
       .box {
@@ -38,12 +38,14 @@
     </noscript>
   </head>
   <body>
-      <div class="body">
+      <div class="bdy">
       <nav class="navba" id="navbar">
             <span class="topbar">
-                <a class="has-text-light" href="#"
+                <a class="has-text-light" href="https://github.com/reactghana/" style="margin-right: 10px;"
                     ><i class="fa fa-pen"></i>
                 </a>
+                <span class="has-text-dark" style="display: none;" id="dark" onclick="darkMode()"><i class="far fa-moon"></i></span>
+      <span class="has-text-light" id="day" onclick="dayMode()"><i class="fas fa-moon"></i></span>
                 <!-- <a class="has-text-warning" href="#"
                     ><i class="fab fa-twitter"></i>
                 </a>
@@ -59,7 +61,7 @@
       </nav>
     
       <div class="image is-128x128 img-div">
-        <img class="logo" src="img/react.png" />
+        <a href="index.html"><img class="logo" src="img/react.png" /></a>
         <div class="title is-4 has-text-danger tit">
           React Ghana
           <span class="title is-3" style="margin-right: 50px;">
@@ -76,6 +78,20 @@
         </div>
       </div>
       <img class="image ghana" src="img/gh.jpg" />
+      
+      <script>
+        // DARK MODE SETTINGS.
+        function darkMode() {
+          $("body").css("background-color", "#282c34");
+          $("#dark").css("display", "none");
+          $("#day").css("display", "inline");
+        }
+        function dayMode() {
+          $("body").css("background-color", "white");
+          $("#day").css("display", "none");
+          $("#dark").css("display", "inline");
+        }
+      </script>
 
       <!-- BODY -->
       <section class="section1">
@@ -280,6 +296,13 @@
           </div>
       </section>
     </div>
+
+    <div
+        class="title is-4 has-text-primary"
+        style="margin: 20px; text-align: center; border-top: solid 2px grey;"
+      >
+        2019 ReactJS-Ghana
+      </div>
 
     <script type="module" src="main.js"></script>
     <!-- <script type="module" src="./Database/news.js"></script>

@@ -70,8 +70,8 @@ for (var i = 0; i < meetUps.length; i++) {
 
 // for NEWs
 for (var i = 0; i < ourNews.length; i++) {
-  if (ourNews.length == 2) {
-    const { newsTitle, detail, newsLink } = ourNews[i];
+  if (ourNews.length !== 0) {
+    const { newsTitle, newsLink } = ourNews[i];
     $("#news").append(
       '<div> <article class="has-text-light"> <header class="has-text-warning">' +
         newsTitle +
@@ -81,8 +81,6 @@ for (var i = 0; i < ourNews.length; i++) {
         '">read more ...</a> </article></div>'
     );
     document.querySelector(".empty2").innerHTML = "";
-  } else {
-    $("#news").append("<div class='empty'>NO NEWS</div>");
   }
 }
 
@@ -91,17 +89,15 @@ for (var i = 0; i < ourJobs.length; i++) {
   if (ourJobs.length !== 0) {
     const { jobTitle, jobDetail, jobLink } = ourJobs[i];
     $("#job").append(
-      '<div> <article class="subtitle is-5 has-text-primary"> <header class="title has-text-warning">' +
+      '<div> <article class="subtitle is-5 has-text-primary" > <h1 class="title has-text-warning" style="margin-bottom: 0.5px;">' +
         jobTitle +
-        "</header> " +
+        "</h1> " +
         jobDetail +
         ' <a class="subtitle is-5" href="' +
         jobLink +
         '">read more ...</a> </article></div>'
     );
     document.querySelector(".empty3").innerHTML = "";
-  } else {
-    $("#job").append("<div class='empty'>NO JOB</div>");
   }
 }
 
@@ -132,8 +128,6 @@ for (var i = 0; i < ourTeam.length; i++) {
         " </div>"
     );
     document.querySelector(".empty4").innerHTML = "";
-  } else {
-    $("#team").append("<div class='empty'>NO TEAM</div>");
   }
 }
 
@@ -147,7 +141,7 @@ for (var i = 0; i < ourSponsors.length; i++) {
         '" /> </div> </div> '
     );
     document.querySelector(".empty5").innerHTML = "";
-  } else {
-    $("#sponsor").append("<div class='empty'>NO SPONSOR</div>");
   }
 }
+
+

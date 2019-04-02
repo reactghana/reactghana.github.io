@@ -1,2 +1,7 @@
 //NEWS
-export const ourNew = [];
+export const ourNew = [
+//   {
+//     newsTitle: "News Title",
+//     newsLink: "newslink"
+//   }
+];
