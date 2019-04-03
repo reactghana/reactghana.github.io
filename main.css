@@ -1,7 +1,11 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
 body {
   background-color: #282c34;
   height: 100%;
   display: block;
+
 }
 .boy {
   height: 100vh;
@@ -55,7 +59,7 @@ body {
   }
 } */
 .tit {
-  width: 150px;
+  width: 160px;
   margin-left: -12px;
 }
 .logo {
